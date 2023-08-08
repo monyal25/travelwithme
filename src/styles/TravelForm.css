@@ -1,0 +1,104 @@
+/* ../styles/TravelForm.css */
+
+/* Common styles */
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+/* Sidebar */
+.sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f8f9fa;
+  transition: width 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.collapsed {
+  width: 70px;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 15px;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.sidebar-menu a:hover {
+  color: #007bff;
+}
+
+/* Main Content Partition */
+.partition {
+  width: 2px;
+  height: 100%;
+  background-color: #ccc;
+  position: absolute;
+  top: 0;
+  left: 70px;
+}
+
+/* Collapse/Expand Button */
+.collapse-btn,
+.expand-btn {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  top: 10px;
+}
+
+.collapse-btn {
+  left: 70px;
+}
+
+.expand-btn {
+  right: 10px;
+}
+
+/* Form Container */
+.form-container {
+  margin-left: 20px;
+}
+
+/* Additional styles for small screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    position: static;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .collapsed {
+    width: 100%;
+  }
+
+  .partition {
+    display: none;
+  }
+
+  .collapse-btn,
+  .expand-btn {
+    top: 10px;
+  }
+}

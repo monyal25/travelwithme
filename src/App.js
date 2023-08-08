@@ -4,6 +4,7 @@ import Home from "./components/Home";
 import Dashboard from "./components/Dashboard";
 import LogIn from "./components/LogIn";
 import SignUp from "./components/SignUp";
+import ProfilePage from "./components/Profile"
 import { AuthProvider } from "./components/Auth";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/login" component={LogIn} />
           <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/profile" component={ProfilePage} />
         </Switch>
       </BrowserRouter>
     </AuthProvider>

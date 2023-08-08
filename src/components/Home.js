@@ -7,6 +7,9 @@ const Home = () => {
   return (
     <>
       <h1>Home</h1>
+      <p>
+        <Link to="/login">Log In</Link> or <Link to="/signup">Sign Up</Link>
+      </p>
       {currentUser ? (
         <p>
           You are logged - <Link to="/dashboard">View Dashboard</Link>
